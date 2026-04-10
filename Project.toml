@@ -1,0 +1,22 @@
+name = "QTTCore"
+uuid = "7490adec-bd35-40e5-9185-af9af4572033"
+authors = ["chiamin"]
+version = "0.1.0"
+
+[deps]
+KrylovKit = "0b1a1467-8014-51b9-945f-bf0ae24f4b77"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MPSCore = "a1b2c3d4-0000-0000-0000-000000000001"
+
+[sources]
+MPSCore = {path = "../MPSCore"}
+
+[compat]
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[targets]
+test = ["Test", "Random"]
