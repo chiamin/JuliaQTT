@@ -39,12 +39,3 @@ k=256  QTT=0.999999  exact=0.999999
 k=512  QTT=0.999999  exact=1.0
 ```
 
-## Features
-
-- Exact analytic constructors: `qtt_sin`, `qtt_cos`, `qtt_linear`, `qtt_exp`, `qtt_random`
-- Arithmetic: `qtt_sum`, `qtt_prod`
-- Differential operators: `qtto_diff_forward`, `qtto_diff_backward`, `qtto_diff2`
-- Shift operators: `shift_forward_mpo`, `shift_backward_mpo`
-- Interpolation and coarsening: `qtt_interp`, `qtt_coarsen`
-- Linear solver (ALS/DMRG-style): `LinearSolverEngine`
-- Multi-dimensional support via interleaved site ordering
