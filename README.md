@@ -24,19 +24,19 @@ x1, x2 = 0.0, 2π
 # Build exact QTT for sin(x)
 q = qtt_sin(N, x1, x2)
 
-# Evaluate at grid index k (integer 0 to 2^N - 1)
-k   = 256
-dx  = (x2 - x1) / (2^N - 1)
-xv  = x1 + k * dx
-
-println("QTT value : ", evaluate(q, k))
-println("Exact     : ", sin(xv))
+# Evaluate at a few grid points
+dx = (x2 - x1) / (2^N - 1)
+for k in [0, 2^N ÷ 4, 2^N ÷ 2]
+    xv  = x1 + k * dx
+    println("k=$k  QTT=$(round(evaluate(q, k), digits=6))  exact=$(round(sin(xv), digits=6))")
+end
 ```
 
 Output:
 ```
-QTT value : 1.0
-Exact     : 1.0
+k=0    QTT=0.0       exact=0.0
+k=256  QTT=0.999999  exact=0.999999
+k=512  QTT=0.999999  exact=1.0
 ```
 
 ## Features
