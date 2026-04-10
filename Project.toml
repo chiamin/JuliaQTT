@@ -9,7 +9,7 @@ LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 MPSCore = "a1b2c3d4-0000-0000-0000-000000000001"
 
 [sources]
-MPSCore = {path = "../MPSCore"}
+MPSCore = {url = "https://github.com/chiamin/JuliaMPS"}
 
 [compat]
 julia = "1.10"
