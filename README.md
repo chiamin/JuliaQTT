@@ -7,10 +7,9 @@ Built on top of [JuliaMPS](https://github.com/chiamin/JuliaMPS).
 
 ```julia
 using Pkg
+Pkg.add(url="https://github.com/chiamin/JuliaMPS")
 Pkg.add(url="https://github.com/chiamin/JuliaQTT")
 ```
-
-Julia will automatically fetch the `JuliaMPS` dependency.
 
 ## Quick example
 
